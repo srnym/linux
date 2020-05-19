@@ -30,4 +30,5 @@ endif
 ifeq ($(CONFIG_BPF_JIT),y)
 obj-$(CONFIG_BPF_SYSCALL) += bpf_struct_ops.o
 obj-${CONFIG_BPF_LSM} += bpf_lsm.o
+obj-$(CONFIG_BPF_IO_FILTER) += bpf_io_filter.o
 endif
